@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Leadership & Governance | Mì Quảng Cô Viên</title>
+    <meta name="description" content="Meet the Executive Council and owners of Co Vien Mi Quang Food Trading Company Limited: Founder Pran Nath Soni, Director Vo Thi Vien, and CEO Chayan Soni.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        turmeric: {
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            200: '#FDE68A',
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                            800: '#92400E',
+                            900: '#78350F'
+                        },
+                        brand: {
+                            black: '#0D0B0A',
+                            espresso: '#1A1614',
+                            charcoal: '#28231F',
+                            paper: '#FDFCF9',
+                            card: '#FFFFFF',
+                            border: '#EAE5DC',
+                            herbal: '#16A34A',
+                            herbaldark: '#14532D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-paper text-brand-black font-sans antialiased selection:bg-turmeric-500 selection:text-brand-black">
+
+    <!-- Top Luxury Utility Header -->
+    <!-- Navigation Bar -->
+        <!-- Main Navigation Bar (Clean, Sleek, No Overflow) -->
+    <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-charcoal text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Insignia -->
+            <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+                <div class="w-11 h-11 rounded-full border border-turmeric-500 overflow-hidden p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-white leading-tight">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-[8px] uppercase tracking-[0.25em] text-turmeric-400 font-bold hidden sm:block">Central Vietnam Heritage</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links (Streamlined Labels to prevent border overflow) -->
+            <nav class="hidden xl:flex items-center gap-6 2xl:gap-8 text-xs font-semibold tracking-[0.12em] uppercase">
+                <a href="index.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Home</a>
+                <a href="story.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Heritage</a>
+                <a href="craft.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">The Craft</a>
+                <a href="dishes.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Dishes</a>
+                <a href="leadership.html" class="text-turmeric-400 border-b-2 border-turmeric-500 pb-1 font-bold">Leadership</a>
+                <a href="locations.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Locations</a>
+                <a href="corporate.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Corporate</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
+                <a href="locations.html" class="px-5 py-2 rounded-full bg-turmeric-500 text-brand-black text-[11px] font-bold tracking-[0.15em] uppercase hover:bg-turmeric-400 transition-all duration-300 shadow-md">
+                    Find Hubs
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileNavToggle" aria-label="Toggle navigation" class="xl:hidden p-2 text-stone-300 hover:text-turmeric-400 flex-shrink-0">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileNavDropdown" class="hidden xl:hidden bg-brand-black border-b border-brand-charcoal px-6 py-6 space-y-3 text-xs uppercase tracking-[0.18em]">
+            <a href="index.html" class="block py-2 text-stone-300 hover:text-white">Home</a>
+            <a href="story.html" class="block py-2 text-stone-300 hover:text-white">Heritage & Story</a>
+            <a href="craft.html" class="block py-2 text-stone-300 hover:text-white">The Culinary Craft</a>
+            <a href="dishes.html" class="block py-2 text-stone-300 hover:text-white">Signature Dishes</a>
+            <a href="leadership.html" class="block py-2 text-turmeric-400 font-bold">Executive Leadership</a>
+            <a href="locations.html" class="block py-2 text-stone-300 hover:text-white">Establishments & Hubs</a>
+            <a href="corporate.html" class="block py-2 text-stone-300 hover:text-white">Corporate Governance</a>
+        </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="bg-brand-black text-white py-24 sm:py-32 relative overflow-hidden">
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
+            <span class="text-xs font-bold tracking-[0.3em] uppercase text-turmeric-400 block mb-4">Ownership & Stewardship</span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Executive Leadership Council
+            </h1>
+            <p class="text-stone-300 font-light text-base sm:text-xl max-w-3xl mx-auto leading-relaxed">
+                Meet the visionary owners shaping the destiny of Co Vien Mi Quang Food Trading Company Limited through unwavering culinary guardianship and modern corporate governance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Leadership Dossiers -->
+    <main class="py-24 bg-brand-paper">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 space-y-24">
+
+            <!-- Leader 1: Founder -->
+            <section id="founder" class="bg-white rounded-3xl p-8 sm:p-14 border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-4 flex flex-col items-center text-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-turmeric-500 to-amber-200 text-brand-black flex items-center justify-center font-serif text-3xl font-black mb-4 shadow-xl shadow-turmeric-500/20">
+                            PS
+                        </div>
+                        <span class="text-xs uppercase font-bold tracking-[0.25em] text-turmeric-600">Founding Visionary</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">PRAN NATH SONI</h2>
+                        <span class="text-xs text-stone-500 mt-1 font-semibold">Founder</span>
+                    </div>
+                    <div class="lg:col-span-8 space-y-4 text-stone-700 font-light leading-relaxed text-sm sm:text-base border-t lg:border-t-0 lg:border-l border-stone-100 pt-6 lg:pt-0 lg:pl-10">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Vision of Cross-Border Gastronomic Prestige</h3>
+                        <p>
+                            As Founder, <strong>Pran Nath Soni</strong> provided the foundational impetus that established the commercial and philosophical framework of the company. With an international appreciation for culinary heritage and enterprise scaling, he recognized that Central Vietnam's indigenous culinary gems possessed the depth and refinement to command respect far beyond national borders.
+                        </p>
+                        <p>
+                            His stewardship emphasizes long-term institutional stability, brand prestige, ethical farmer partnerships, and unwavering support for culinary purism without compromise.
+                        </p>
+                        <blockquote class="italic text-stone-800 border-l-4 border-turmeric-500 pl-4 my-4 font-serif text-lg bg-turmeric-50/50 p-4 rounded-r-2xl">
+                            "A culinary tradition that has survived centuries deserves to be treated with the highest dignity, corporate integrity, and artistic care."
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leader 2: Director (Vo Thi Vien) -->
+            <section id="director" class="bg-white rounded-3xl p-8 sm:p-14 border-2 border-turmeric-500 shadow-2xl relative">
+                <span class="absolute -top-3 right-8 bg-turmeric-500 text-brand-black text-[10px] uppercase tracking-widest font-black px-4 py-1.5 rounded-full shadow-md">
+                    Director & Legal Representative
+                </span>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-4 flex flex-col items-center text-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-turmeric-400 to-amber-100 text-brand-black flex items-center justify-center font-serif text-3xl font-black mb-4 shadow-xl shadow-turmeric-500/30">
+                            VV
+                        </div>
+                        <span class="text-xs uppercase font-bold tracking-[0.25em] text-turmeric-600">Culinary Custodian</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">VO THI VIEN</h2>
+                        <span class="text-xs text-stone-500 mt-1 font-semibold">Director ("Cô Viên")</span>
+                    </div>
+                    <div class="lg:col-span-8 space-y-4 text-stone-700 font-light leading-relaxed text-sm sm:text-base border-t lg:border-t-0 lg:border-l border-turmeric-100 pt-6 lg:pt-0 lg:pl-10">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">The Culinary Soul and Living Recipe Keeper</h3>
+                        <p>
+                            <strong>Vo Thi Vien (Cô Viên)</strong> is the creative nucleus, legal representative, and master craftswoman whose name honors the brand. Every nuance of our signature <em>nước nhưn</em> reduction, fresh noodle consistency, aromatic shallot oil roasting, and herb selection originates from her personal direction.
+                        </p>
+                        <p>
+                            Under her strict kitchen governance, all three hubs operate with absolute consistency. She maintains daily oversight of ingredients, personally audits suppliers, and ensures every cook adheres to traditional Central Vietnamese culinary doctrine.
+                        </p>
+                        <blockquote class="italic text-stone-800 border-l-4 border-turmeric-500 pl-4 my-4 font-serif text-lg bg-turmeric-50/50 p-4 rounded-r-2xl">
+                            "When a customer sits at our table, they are tasting my family's heritage. There is no room for shortcuts in Cô Viên's kitchen."
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leader 3: CEO (Chayan Soni) -->
+            <section id="ceo" class="bg-white rounded-3xl p-8 sm:p-14 border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-4 flex flex-col items-center text-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-turmeric-500 to-amber-200 text-brand-black flex items-center justify-center font-serif text-3xl font-black mb-4 shadow-xl shadow-turmeric-500/20">
+                            CS
+                        </div>
+                        <span class="text-xs uppercase font-bold tracking-[0.25em] text-turmeric-600">Executive Officer</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">CHAYAN SONI</h2>
+                        <span class="text-xs text-stone-500 mt-1 font-semibold">Chief Executive Officer (CEO)</span>
+                    </div>
+                    <div class="lg:col-span-8 space-y-4 text-stone-700 font-light leading-relaxed text-sm sm:text-base border-t lg:border-t-0 lg:border-l border-stone-100 pt-6 lg:pt-0 lg:pl-10">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Modernization, Governance & Strategic Growth</h3>
+                        <p>
+                            Serving as Chief Executive Officer, <strong>Chayan Soni</strong> spearheads the overarching strategy, corporate compliance, brand architecture, and multi-hub operational scaling across Ho Chi Minh City.
+                        </p>
+                        <p>
+                            His leadership bridges authentic craftsmanship with contemporary management: establishing transparent corporate records, streamlining supply chain logistics, elevating guest touchpoints, and driving the digital brand infrastructure of <strong>miquangcovien.com</strong>.
+                        </p>
+                        <blockquote class="italic text-stone-800 border-l-4 border-turmeric-500 pl-4 my-4 font-serif text-lg bg-turmeric-50/50 p-4 rounded-r-2xl">
+                            "Our goal is to build an enduring culinary house that pairs deep generational authenticity with world-class operational governance."
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="bg-brand-black text-stone-400 py-16 border-t border-brand-charcoal text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="w-11 h-11 rounded-full border-2 border-turmeric-500 overflow-hidden p-1 bg-white flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="font-serif text-lg font-bold text-white block">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-stone-500">CO VIEN MI QUANG FOOD TRADING CO., LTD. &middot; Tax ID: 0319275224</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-8 uppercase tracking-[0.15em] text-[11px]">
+                <a href="index.html" class="hover:text-turmeric-400">Home</a>
+                <a href="story.html" class="hover:text-turmeric-400">Heritage</a>
+                <a href="craft.html" class="hover:text-turmeric-400">Craft</a>
+                <a href="dishes.html" class="hover:text-turmeric-400">Dishes</a>
+                <a href="leadership.html" class="text-turmeric-400 font-bold">Leadership</a>
+                <a href="locations.html" class="hover:text-turmeric-400">Locations</a>
+                <a href="corporate.html" class="hover:text-turmeric-400">Corporate</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobileNavToggle').addEventListener('click', () => {
+            document.getElementById('mobileNavDropdown').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

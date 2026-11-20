@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÌ QUẢNG CÔ VIÊN | Authentic Turmeric Gold Central Vietnamese Cuisine</title>
+    <meta name="description" content="Official luxury brand portal of Co Vien Mi Quang Food Trading Company Limited. Honoring generation-old Central Vietnamese culinary traditions under Founder Pran Nath Soni, Director Vo Thi Vien, and CEO Chayan Soni.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        turmeric: {
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            200: '#FDE68A',
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B', // Signature Turmeric Gold
+                            600: '#D97706',
+                            700: '#B45309',
+                            800: '#92400E',
+                            900: '#78350F'
+                        },
+                        brand: {
+                            black: '#0D0B0A',
+                            espresso: '#1A1614',
+                            charcoal: '#28231F',
+                            paper: '#FDFCF9',
+                            card: '#FFFFFF',
+                            border: '#EAE5DC',
+                            herbal: '#16A34A',
+                            herbaldark: '#14532D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, rgba(245, 158, 11, 0.15) 0%, rgba(13, 11, 10, 0.95) 75%);
+        }
+    </style>
+</head>
+<body class="bg-brand-paper text-brand-black font-sans antialiased selection:bg-turmeric-500 selection:text-brand-black">
+
+    <!-- Top Luxury Utility Header -->
+    <!-- Main Navigation Bar -->
+        <!-- Main Navigation Bar (Clean, Sleek, No Overflow) -->
+    <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-charcoal text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Insignia -->
+            <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+                <div class="w-11 h-11 rounded-full border border-turmeric-500 overflow-hidden p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-white leading-tight">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-[8px] uppercase tracking-[0.25em] text-turmeric-400 font-bold hidden sm:block">Central Vietnam Heritage</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links (Streamlined Labels to prevent border overflow) -->
+            <nav class="hidden xl:flex items-center gap-6 2xl:gap-8 text-xs font-semibold tracking-[0.12em] uppercase">
+                <a href="index.html" class="text-turmeric-400 border-b-2 border-turmeric-500 pb-1 font-bold">Home</a>
+                <a href="story.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Heritage</a>
+                <a href="craft.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">The Craft</a>
+                <a href="dishes.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Dishes</a>
+                <a href="leadership.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Leadership</a>
+                <a href="locations.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Locations</a>
+                <a href="corporate.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Corporate</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
+                <a href="locations.html" class="px-5 py-2 rounded-full bg-turmeric-500 text-brand-black text-[11px] font-bold tracking-[0.15em] uppercase hover:bg-turmeric-400 transition-all duration-300 shadow-md">
+                    Find Hubs
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileNavToggle" aria-label="Toggle navigation" class="xl:hidden p-2 text-stone-300 hover:text-turmeric-400 flex-shrink-0">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileNavDropdown" class="hidden xl:hidden bg-brand-black border-b border-brand-charcoal px-6 py-6 space-y-3 text-xs uppercase tracking-[0.18em]">
+            <a href="index.html" class="block py-2 text-turmeric-400 font-bold">Home</a>
+            <a href="story.html" class="block py-2 text-stone-300 hover:text-white">Heritage & Story</a>
+            <a href="craft.html" class="block py-2 text-stone-300 hover:text-white">The Culinary Craft</a>
+            <a href="dishes.html" class="block py-2 text-stone-300 hover:text-white">Signature Dishes</a>
+            <a href="leadership.html" class="block py-2 text-stone-300 hover:text-white">Executive Leadership</a>
+            <a href="locations.html" class="block py-2 text-stone-300 hover:text-white">Establishments & Hubs</a>
+            <a href="corporate.html" class="block py-2 text-stone-300 hover:text-white">Corporate Governance</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Vibrant Turmeric Gold & Black) -->
+    <section class="relative min-h-[90vh] text-white flex items-center overflow-hidden">
+        <!-- Background Image (Crisp, Clear, Bright) -->
+        <div class="absolute inset-0 bg-cover bg-center scale-100" style="background-image: url('assets/hero-mi-quang.jpg');"></div>
+        <!-- Light Transparent Scrim for Text Contrast -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-28 w-full">
+            <div class="max-w-2xl bg-black/50 backdrop-blur-md p-8 sm:p-12 rounded-3xl border border-white/15 shadow-2xl">
+                <!-- Slogan Pill -->
+                <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-turmeric-400/60 bg-black/60 backdrop-blur-md mb-6">
+                    <span class="w-2.5 h-2.5 rounded-full bg-turmeric-400 animate-pulse"></span>
+                    <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-turmeric-300">Golden Turmeric &middot; Generational Heritage</span>
+                </div>
+
+                <!-- Grand Title -->
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] text-white tracking-tight mb-6">
+                    The Vibrant Soul of <br>
+                    <span class="italic font-normal text-turmeric-400">Authentic Mì Quảng</span>.
+                </h1>
+
+                <!-- Manifesto Paragraph -->
+                <p class="text-stone-200 font-normal text-sm sm:text-base leading-relaxed mb-8">
+                    Under the visionary leadership of <strong>Founder Pran Nath Soni</strong>, culinary matriarch <strong>Director Vo Thi Vien (Cô Viên)</strong>, and <strong>CEO Chayan Soni</strong>, our culinary house elevates Vietnam's golden turmeric noodle into a world-class gastronomic experience.
+                </p>
+
+                <!-- Dual Actions -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="story.html" class="px-7 py-3.5 rounded-full bg-turmeric-500 text-brand-black font-bold text-xs tracking-[0.2em] uppercase hover:bg-turmeric-400 transition-all duration-300 shadow-xl shadow-amber-950/40">
+                        Explore Our Heritage
+                    </a>
+                    <a href="locations.html" class="px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 text-white text-xs tracking-[0.2em] uppercase transition-all duration-300 backdrop-blur-sm">
+                        View 3 Establishments
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Philosophy Statement -->
+    <section class="py-24 lg:py-32 bg-white text-brand-black relative border-b border-brand-border">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-turmeric-100 text-turmeric-800 text-xs font-bold uppercase tracking-widest mb-6">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-turmeric-600"></i>
+                <span>Culinary Manifesto</span>
+            </div>
+            <blockquote class="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-stone-900 leading-[1.3] mb-8">
+                "We do not cut corners, nor do we dilute tradition for convenience. Mì Quảng Cô Viên exists to preserve the living soul of Quảng Nam cuisine—authentic, robust, and crafted with generational reverence."
+            </blockquote>
+            <div class="flex items-center justify-center gap-3">
+                <div class="w-8 h-[2px] bg-turmeric-500"></div>
+                <span class="text-xs tracking-[0.25em] uppercase font-bold text-stone-900">Director Vo Thi Vien & Executive Council</span>
+                <div class="w-8 h-[2px] bg-turmeric-500"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 4 Brand Pillars (Crisp Cards with Bold Turmeric Accents) -->
+    <section class="py-24 bg-brand-paper border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-turmeric-600">The Golden Standard</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mt-2">The Pillars of Cô Viên</h2>
+                </div>
+                <a href="craft.html" class="text-xs uppercase tracking-[0.2em] font-bold text-turmeric-600 hover:text-turmeric-700 transition-colors inline-flex items-center gap-2">
+                    <span>The Full Craftsmanship Dossier</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-2xl bg-turmeric-100 text-turmeric-700 flex items-center justify-center font-bold font-serif text-xl mb-6 group-hover:bg-turmeric-500 group-hover:text-brand-black transition-colors">
+                        01
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">Artisanal Turmeric Noodles</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        Freshly steamed daily from aged Central paddy grains, naturally infused with native golden turmeric for that signature springy texture.
+                    </p>
+                    <a href="craft.html#noodles" class="text-[11px] font-bold uppercase tracking-wider text-turmeric-700 hover:text-turmeric-900 flex items-center gap-1.5">
+                        <span>Read Chapter</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-2xl bg-turmeric-100 text-turmeric-700 flex items-center justify-center font-bold font-serif text-xl mb-6 group-hover:bg-turmeric-500 group-hover:text-brand-black transition-colors">
+                        02
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">The "Nhưn" Essence</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        A concentrated umami reduction simmered for hours with free-range proteins and native white shallots (củ nén), never a diluted soup broth.
+                    </p>
+                    <a href="craft.html#broth" class="text-[11px] font-bold uppercase tracking-wider text-turmeric-700 hover:text-turmeric-900 flex items-center gap-1.5">
+                        <span>Read Chapter</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold font-serif text-xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        03
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">The Nine-Herb Garden</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        Crisp shaved banana flowers, Vietnamese mint, sweet basil, and mountain herbs inspired by Trà Quế organic botanical lineage.
+                    </p>
+                    <a href="craft.html#herbs" class="text-[11px] font-bold uppercase tracking-wider text-emerald-700 hover:text-emerald-900 flex items-center gap-1.5">
+                        <span>Read Chapter</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-2xl bg-turmeric-100 text-turmeric-700 flex items-center justify-center font-bold font-serif text-xl mb-6 group-hover:bg-turmeric-500 group-hover:text-brand-black transition-colors">
+                        04
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">Charcoal Sesame Crackers</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                        Traditional thick Đại Lộc rice crackers roasted over coconut-shell charcoal to provide the indispensable acoustic crunch.
+                    </p>
+                    <a href="craft.html#crackers" class="text-[11px] font-bold uppercase tracking-wider text-turmeric-700 hover:text-turmeric-900 flex items-center gap-1.5">
+                        <span>Read Chapter</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Showcase -->
+    <section class="py-24 bg-brand-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-bold tracking-[0.3em] uppercase text-turmeric-400 block mb-3">Executive Council</span>
+                <h2 class="font-serif text-4xl sm:text-5xl font-bold text-white">Stewardship & Governance</h2>
+                <p class="text-stone-400 font-light text-sm sm:text-base mt-4">
+                    The shared commitment uniting international enterprise vision with genuine Vietnamese culinary guardianship.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Founder -->
+                <div class="bg-brand-charcoal/70 border border-stone-800 p-8 rounded-3xl flex flex-col justify-between hover:border-turmeric-500 transition-colors">
+                    <div>
+                        <span class="text-[10px] tracking-[0.25em] uppercase font-bold text-turmeric-400 block mb-2">Founder</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-4">PRAN NATH SONI</h3>
+                        <p class="text-stone-400 text-xs sm:text-sm leading-relaxed mb-6">
+                            Instilling the enterprise vision and cross-border appreciation to establish Central Vietnamese gastronomy as a respected brand on the international stage.
+                        </p>
+                    </div>
+                    <a href="leadership.html#founder" class="text-[11px] uppercase tracking-[0.2em] text-turmeric-300 font-bold flex items-center gap-2 pt-4 border-t border-stone-800">
+                        <span>Read Executive Profile</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Director -->
+                <div class="bg-brand-charcoal border-2 border-turmeric-500 p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative">
+                    <span class="absolute -top-3 right-6 bg-turmeric-500 text-brand-black text-[10px] uppercase tracking-widest font-black px-4 py-1 rounded-full shadow-md">
+                        Culinary Custodian
+                    </span>
+                    <div>
+                        <span class="text-[10px] tracking-[0.25em] uppercase font-bold text-turmeric-400 block mb-2">Director & Legal Representative</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-4">VO THI VIEN</h3>
+                        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed mb-6">
+                            The heart, palate, and living heritage of Cô Viên. Directing culinary discipline, secret seasoning formulations, and generational recipe integrity.
+                        </p>
+                    </div>
+                    <a href="leadership.html#director" class="text-[11px] uppercase tracking-[0.2em] text-turmeric-400 font-bold flex items-center gap-2 pt-4 border-t border-stone-800">
+                        <span>Read Executive Profile</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- CEO -->
+                <div class="bg-brand-charcoal/70 border border-stone-800 p-8 rounded-3xl flex flex-col justify-between hover:border-turmeric-500 transition-colors">
+                    <div>
+                        <span class="text-[10px] tracking-[0.25em] uppercase font-bold text-turmeric-400 block mb-2">Chief Executive Officer</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-4">CHAYAN SONI</h3>
+                        <p class="text-stone-400 text-xs sm:text-sm leading-relaxed mb-6">
+                            Leading strategic modernization, multi-hub operational management across Thu Duc City, brand equity expansion, and corporate transparency.
+                        </p>
+                    </div>
+                    <a href="leadership.html#ceo" class="text-[11px] uppercase tracking-[0.2em] text-turmeric-300 font-bold flex items-center gap-2 pt-4 border-t border-stone-800">
+                        <span>Read Executive Profile</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Establishments Teaser -->
+    <section class="py-24 bg-white border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-turmeric-600">Official Establishments</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mt-2">Three Registered Hubs</h2>
+                </div>
+                <a href="locations.html" class="text-xs uppercase tracking-[0.2em] font-bold text-turmeric-600 hover:text-turmeric-800 transition-colors inline-flex items-center gap-2">
+                    <span>View All Hub Details & Maps</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hub 1 -->
+                <div class="border-2 border-stone-200 rounded-3xl p-8 bg-brand-paper shadow-sm flex flex-col justify-between hover:border-turmeric-500 transition-colors">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold tracking-[0.2em] text-turmeric-600 block mb-2">Hub 01 &middot; Corporate HQ</span>
+                        <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">Long Bình Headquarters</h3>
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                            38 Đường 9A, Khu phố Phước Thiện, Long Bình Ward, Thu Duc City, HCMC.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 flex items-center justify-between text-xs">
+                        <span class="text-stone-500">06:00 AM – 09:30 PM</span>
+                        <a href="locations.html#hub-01" class="font-bold text-turmeric-700">Directions &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Hub 2 -->
+                <div class="border-2 border-turmeric-500 rounded-3xl p-8 bg-white shadow-xl flex flex-col justify-between relative">
+                    <span class="absolute -top-3 right-6 bg-turmeric-500 text-brand-black text-[10px] uppercase tracking-widest font-black px-3 py-1 rounded-full shadow-sm">Flagship</span>
+                    <div>
+                        <span class="text-[10px] uppercase font-bold tracking-[0.2em] text-turmeric-600 block mb-2">Hub 02 &middot; Flagship Culinary Center</span>
+                        <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">Nguyễn Xiển Hub</h3>
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                            532 – 542 Nguyễn Xiển, Long Thạnh Mỹ / Long Bình Ward, Thu Duc City, HCMC.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 flex items-center justify-between text-xs">
+                        <span class="text-stone-700 font-bold">+84 906 404 595</span>
+                        <a href="locations.html#hub-02" class="font-bold text-turmeric-700">Directions &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Hub 3 -->
+                <div class="border-2 border-stone-200 rounded-3xl p-8 bg-brand-paper shadow-sm flex flex-col justify-between hover:border-turmeric-500 transition-colors">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold tracking-[0.2em] text-turmeric-600 block mb-2">Hub 03 &middot; Urban Center</span>
+                        <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">Nguyễn Quý Đức Hub</h3>
+                        <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-6">
+                            45 Nguyễn Quý Đức, An Phú Ward, Thu Duc City, HCMC.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 flex items-center justify-between text-xs">
+                        <span class="text-stone-500">06:30 AM – 09:30 PM</span>
+                        <a href="locations.html#hub-03" class="font-bold text-turmeric-700">Directions &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Footer -->
+    <footer class="bg-brand-black text-stone-400 py-20 border-t border-brand-charcoal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Col 1 -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full border-2 border-turmeric-500 overflow-hidden p-1 bg-white flex items-center justify-center flex-shrink-0 shadow-md">
+                            <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                        </div>
+                        <span class="font-serif text-2xl font-bold text-white tracking-wide">MÌ QUẢNG CÔ VIÊN</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-md mb-6">
+                        CO VIEN MI QUANG FOOD TRADING COMPANY LIMITED is committed to preserving the living gastronomic soul of Central Vietnam through artisanal integrity and corporate excellence.
+                    </p>
+                    <div class="text-xs text-stone-500 space-y-1">
+                        <p><strong class="text-stone-400">Enterprise Code / Tax ID:</strong> <span class="text-turmeric-400 font-mono font-bold">0319275224</span></p>
+                        <p><strong class="text-stone-400">Registered Domain:</strong> miquangcovien.com</p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h4 class="text-white text-xs font-bold uppercase tracking-[0.25em] mb-4 text-turmeric-400">Brand Dossier</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a href="index.html" class="hover:text-turmeric-400 transition-colors">Home Page</a></li>
+                        <li><a href="story.html" class="hover:text-turmeric-400 transition-colors">Our Heritage & Story</a></li>
+                        <li><a href="craft.html" class="hover:text-turmeric-400 transition-colors">The Culinary Craft</a></li>
+                        <li><a href="dishes.html" class="hover:text-turmeric-400 transition-colors">Signature Dishes</a></li>
+                        <li><a href="leadership.html" class="hover:text-turmeric-400 transition-colors">Executive Leadership</a></li>
+                        <li><a href="locations.html" class="hover:text-turmeric-400 transition-colors">The 3 Establishments</a></li>
+                        <li><a href="corporate.html" class="hover:text-turmeric-400 transition-colors">Corporate Governance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Leadership Summary -->
+                <div>
+                    <h4 class="text-white text-xs font-bold uppercase tracking-[0.25em] mb-4 text-turmeric-400">Executive Council</h4>
+                    <ul class="space-y-2 text-xs text-stone-400">
+                        <li><span class="text-turmeric-400 font-semibold">Founder:</span> Pran Nath Soni</li>
+                        <li><span class="text-turmeric-400 font-semibold">Director:</span> Vo Thi Vien</li>
+                        <li><span class="text-turmeric-400 font-semibold">CEO:</span> Chayan Soni</li>
+                        <li class="pt-4 text-stone-500">Official Inquiries: <br><a href="mailto:contact@miquangcovien.com" class="text-turmeric-400">contact@miquangcovien.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-brand-charcoal text-center text-xs text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <span>&copy; 2026 CO VIEN MI QUANG FOOD TRADING COMPANY LIMITED. All Rights Reserved.</span>
+                <span>Ho Chi Minh City, Vietnam</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons and Scripts -->
+    <script>
+        lucide.createIcons();
+        const toggle = document.getElementById('mobileNavToggle');
+        const dropdown = document.getElementById('mobileNavDropdown');
+        toggle.addEventListener('click', () => {
+            dropdown.classList.toggle('hidden');
+        });
+        dropdown.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                dropdown.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

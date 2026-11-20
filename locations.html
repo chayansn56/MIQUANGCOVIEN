@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Establishments | Mì Quảng Cô Viên</title>
+    <meta name="description" content="Discover the three registered culinary establishments of Co Vien Mi Quang Food Trading Company Limited across Thu Duc City, Ho Chi Minh City.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        turmeric: {
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            200: '#FDE68A',
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                            800: '#92400E',
+                            900: '#78350F'
+                        },
+                        brand: {
+                            black: '#0D0B0A',
+                            espresso: '#1A1614',
+                            charcoal: '#28231F',
+                            paper: '#FDFCF9',
+                            card: '#FFFFFF',
+                            border: '#EAE5DC',
+                            herbal: '#16A34A',
+                            herbaldark: '#14532D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-paper text-brand-black font-sans antialiased selection:bg-turmeric-500 selection:text-brand-black">
+
+    <!-- Top Luxury Utility Header -->
+    <!-- Navigation Bar -->
+        <!-- Main Navigation Bar (Clean, Sleek, No Overflow) -->
+    <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-charcoal text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Insignia -->
+            <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+                <div class="w-11 h-11 rounded-full border border-turmeric-500 overflow-hidden p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-white leading-tight">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-[8px] uppercase tracking-[0.25em] text-turmeric-400 font-bold hidden sm:block">Central Vietnam Heritage</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links (Streamlined Labels to prevent border overflow) -->
+            <nav class="hidden xl:flex items-center gap-6 2xl:gap-8 text-xs font-semibold tracking-[0.12em] uppercase">
+                <a href="index.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Home</a>
+                <a href="story.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Heritage</a>
+                <a href="craft.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">The Craft</a>
+                <a href="dishes.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Dishes</a>
+                <a href="leadership.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Leadership</a>
+                <a href="locations.html" class="text-turmeric-400 border-b-2 border-turmeric-500 pb-1 font-bold">Locations</a>
+                <a href="corporate.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Corporate</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
+                <a href="locations.html" class="px-5 py-2 rounded-full bg-turmeric-500 text-brand-black text-[11px] font-bold tracking-[0.15em] uppercase hover:bg-turmeric-400 transition-all duration-300 shadow-md">
+                    Find Hubs
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileNavToggle" aria-label="Toggle navigation" class="xl:hidden p-2 text-stone-300 hover:text-turmeric-400 flex-shrink-0">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileNavDropdown" class="hidden xl:hidden bg-brand-black border-b border-brand-charcoal px-6 py-6 space-y-3 text-xs uppercase tracking-[0.18em]">
+            <a href="index.html" class="block py-2 text-stone-300 hover:text-white">Home</a>
+            <a href="story.html" class="block py-2 text-stone-300 hover:text-white">Heritage & Story</a>
+            <a href="craft.html" class="block py-2 text-stone-300 hover:text-white">The Culinary Craft</a>
+            <a href="dishes.html" class="block py-2 text-stone-300 hover:text-white">Signature Dishes</a>
+            <a href="leadership.html" class="block py-2 text-stone-300 hover:text-white">Executive Leadership</a>
+            <a href="locations.html" class="block py-2 text-turmeric-400 font-bold">Establishments & Hubs</a>
+            <a href="corporate.html" class="block py-2 text-stone-300 hover:text-white">Corporate Governance</a>
+        </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="bg-brand-black text-white py-24 sm:py-32 relative overflow-hidden">
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
+            <span class="text-xs font-bold tracking-[0.3em] uppercase text-turmeric-400 block mb-4">Our Presence</span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Three Culinary Establishments
+            </h1>
+            <p class="text-stone-300 font-light text-base sm:text-xl max-w-3xl mx-auto leading-relaxed">
+                Strategic hubs positioned throughout Thu Duc City to serve authentic Central Vietnamese cuisine with unwavering standards of excellence.
+            </p>
+        </div>
+    </section>
+
+    <!-- Locations Detailed Showcase -->
+    <main class="py-24 bg-brand-paper">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 space-y-20">
+
+            <!-- Location 1 -->
+            <section id="hub-01" class="bg-white rounded-3xl p-8 sm:p-12 border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-stone-100 gap-4 mb-8">
+                    <div>
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="px-3 py-1 rounded-full bg-turmeric-100 text-turmeric-800 font-bold text-[10px] uppercase tracking-wider">
+                                Hub 01 &middot; Registered Seat
+                            </span>
+                            <span class="text-xs text-emerald-700 font-bold flex items-center gap-1">
+                                <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Corporate HQ
+                            </span>
+                        </div>
+                        <h2 class="font-serif text-3xl font-bold text-stone-900">Long Bình Corporate Headquarters</h2>
+                    </div>
+                    <a href="https://maps.google.com/?q=38+Đường+9A+Long+Bình+Thủ+Đức" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-black text-turmeric-400 text-xs font-bold uppercase tracking-wider hover:bg-turmeric-500 hover:text-brand-black transition-colors shadow-md">
+                        <span>Get Directions</span>
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-stone-700 leading-relaxed font-light">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-turmeric-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Registered Address:</strong>
+                                <span>38 Đường 9A, Khu phố Phước Thiện, Phường Long Bình, Thành phố Thủ Đức, TP. Hồ Chí Minh, Vietnam</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-turmeric-600 flex-shrink-0"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Operating Hours:</strong>
+                                <span>06:00 AM – 09:30 PM (Seven Days a Week)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-paper p-6 rounded-2xl border border-stone-200">
+                        <h4 class="font-serif font-bold text-base text-stone-900 mb-2">Hub Significance</h4>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Serving as the legal and administrative corporate seat of Co Vien Mi Quang Food Trading Company Limited, this location pairs corporate management with a refined dining lounge serving the Long Bình community.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location 2 -->
+            <section id="hub-02" class="bg-white rounded-3xl p-8 sm:p-12 border-2 border-turmeric-500 shadow-2xl hover:shadow-3xl transition-shadow relative">
+                <span class="absolute -top-3 right-8 bg-turmeric-500 text-brand-black text-[10px] uppercase tracking-widest font-black px-4 py-1.5 rounded-full shadow-md">
+                    Flagship Culinary Center
+                </span>
+                <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-stone-100 gap-4 mb-8">
+                    <div>
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="px-3 py-1 rounded-full bg-turmeric-100 text-turmeric-800 font-bold text-[10px] uppercase tracking-wider">
+                                Hub 02 &middot; High Capacity
+                            </span>
+                            <span class="text-xs text-amber-700 font-bold">Flagship Experience</span>
+                        </div>
+                        <h2 class="font-serif text-3xl font-bold text-stone-900">Nguyễn Xiển Flagship Culinary Hub</h2>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+84906404595" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-stone-300 text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-turmeric-500 transition-colors">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-turmeric-600"></i>
+                            <span>Call Hotline</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=532+Nguyễn+Xiển+Thủ+Đức" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-black text-turmeric-400 text-xs font-bold uppercase tracking-wider hover:bg-turmeric-500 hover:text-brand-black transition-colors shadow-md">
+                            <span>Get Directions</span>
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-stone-700 leading-relaxed font-light mb-8">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-turmeric-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Hub Address:</strong>
+                                <span>532 – 542 Nguyễn Xiển, Phường Long Thạnh Mỹ / Long Bình, TP. Thủ Đức, TP. Hồ Chí Minh, Vietnam</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-turmeric-600 flex-shrink-0"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Operating Hours:</strong>
+                                <span>06:00 AM – 10:00 PM (Daily Extended Service)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-turmeric-600 flex-shrink-0"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Dedicated Hotlines:</strong>
+                                <span class="font-mono text-stone-900 font-bold">+84 906 404 595</span> &middot; <span class="font-mono text-stone-900 font-bold">+84 909 622 967</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aspect-[16/10] rounded-2xl overflow-hidden border border-stone-200 shadow-md">
+                        <img src="assets/mi-quang-cn3.jpeg" alt="Mì Quảng Cô Viên Hub Experience" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location 3 -->
+            <section id="hub-03" class="bg-white rounded-3xl p-8 sm:p-12 border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-stone-100 gap-4 mb-8">
+                    <div>
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="px-3 py-1 rounded-full bg-turmeric-100 text-turmeric-800 font-bold text-[10px] uppercase tracking-wider">
+                                Hub 03 &middot; Urban Center
+                            </span>
+                            <span class="text-xs text-stone-500 font-semibold">An Phú District</span>
+                        </div>
+                        <h2 class="font-serif text-3xl font-bold text-stone-900">Nguyễn Quý Đức Hub</h2>
+                    </div>
+                    <a href="https://maps.google.com/?q=45+Nguyễn+Quý+Đức+An+Phú+Thủ+Đức" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-black text-turmeric-400 text-xs font-bold uppercase tracking-wider hover:bg-turmeric-500 hover:text-brand-black transition-colors shadow-md">
+                        <span>Get Directions</span>
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-stone-700 leading-relaxed font-light">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-turmeric-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Hub Address:</strong>
+                                <span>45 Nguyễn Quý Đức, Phường An Phú, TP. Thủ Đức, TP. Hồ Chí Minh, Vietnam</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-turmeric-600 flex-shrink-0"></i>
+                            <div>
+                                <strong class="font-bold text-stone-900 block">Operating Hours:</strong>
+                                <span>06:30 AM – 09:30 PM (Daily)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-paper p-6 rounded-2xl border border-stone-200">
+                        <h4 class="font-serif font-bold text-base text-stone-900 mb-2">Urban Gastronomic Presence</h4>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Situated in the cosmopolitan hub of An Phú, this location delivers the warmth of rural Quảng Nam to urban professionals, expatriates, and traditional food connoisseurs alike.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="bg-brand-black text-stone-400 py-16 border-t border-brand-charcoal text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="w-11 h-11 rounded-full border-2 border-turmeric-500 overflow-hidden p-1 bg-white flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="font-serif text-lg font-bold text-white block">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-stone-500">CO VIEN MI QUANG FOOD TRADING CO., LTD. &middot; Tax ID: 0319275224</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-8 uppercase tracking-[0.15em] text-[11px]">
+                <a href="index.html" class="hover:text-turmeric-400">Home</a>
+                <a href="story.html" class="hover:text-turmeric-400">Heritage</a>
+                <a href="craft.html" class="hover:text-turmeric-400">Craft</a>
+                <a href="dishes.html" class="hover:text-turmeric-400">Dishes</a>
+                <a href="leadership.html" class="hover:text-turmeric-400">Leadership</a>
+                <a href="locations.html" class="text-turmeric-400 font-bold">Locations</a>
+                <a href="corporate.html" class="hover:text-turmeric-400">Corporate</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobileNavToggle').addEventListener('click', () => {
+            document.getElementById('mobileNavDropdown').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

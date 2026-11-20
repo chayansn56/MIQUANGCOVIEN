@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Dishes & Culinary Repertoire | Mì Quảng Cô Viên</title>
+    <meta name="description" content="Discover the authentic culinary creations of Mì Quảng Cô Viên: free-range chicken, sweet river prawns, slow-braised pork belly, and regional Central Vietnamese specialties.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        turmeric: {
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            200: '#FDE68A',
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                            800: '#92400E',
+                            900: '#78350F'
+                        },
+                        brand: {
+                            black: '#0D0B0A',
+                            espresso: '#1A1614',
+                            charcoal: '#28231F',
+                            paper: '#FDFCF9',
+                            card: '#FFFFFF',
+                            border: '#EAE5DC',
+                            herbal: '#16A34A',
+                            herbaldark: '#14532D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-paper text-brand-black font-sans antialiased selection:bg-turmeric-500 selection:text-brand-black">
+
+    <!-- Top Luxury Utility Header -->
+    <!-- Navigation Bar -->
+        <!-- Main Navigation Bar (Clean, Sleek, No Overflow) -->
+    <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-charcoal text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Insignia -->
+            <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+                <div class="w-11 h-11 rounded-full border border-turmeric-500 overflow-hidden p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-white leading-tight">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-[8px] uppercase tracking-[0.25em] text-turmeric-400 font-bold hidden sm:block">Central Vietnam Heritage</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links (Streamlined Labels to prevent border overflow) -->
+            <nav class="hidden xl:flex items-center gap-6 2xl:gap-8 text-xs font-semibold tracking-[0.12em] uppercase">
+                <a href="index.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Home</a>
+                <a href="story.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Heritage</a>
+                <a href="craft.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">The Craft</a>
+                <a href="dishes.html" class="text-turmeric-400 border-b-2 border-turmeric-500 pb-1 font-bold">Dishes</a>
+                <a href="leadership.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Leadership</a>
+                <a href="locations.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Locations</a>
+                <a href="corporate.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Corporate</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
+                <a href="locations.html" class="px-5 py-2 rounded-full bg-turmeric-500 text-brand-black text-[11px] font-bold tracking-[0.15em] uppercase hover:bg-turmeric-400 transition-all duration-300 shadow-md">
+                    Find Hubs
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileNavToggle" aria-label="Toggle navigation" class="xl:hidden p-2 text-stone-300 hover:text-turmeric-400 flex-shrink-0">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileNavDropdown" class="hidden xl:hidden bg-brand-black border-b border-brand-charcoal px-6 py-6 space-y-3 text-xs uppercase tracking-[0.18em]">
+            <a href="index.html" class="block py-2 text-stone-300 hover:text-white">Home</a>
+            <a href="story.html" class="block py-2 text-stone-300 hover:text-white">Heritage & Story</a>
+            <a href="craft.html" class="block py-2 text-stone-300 hover:text-white">The Culinary Craft</a>
+            <a href="dishes.html" class="block py-2 text-turmeric-400 font-bold">Signature Dishes</a>
+            <a href="leadership.html" class="block py-2 text-stone-300 hover:text-white">Executive Leadership</a>
+            <a href="locations.html" class="block py-2 text-stone-300 hover:text-white">Establishments & Hubs</a>
+            <a href="corporate.html" class="block py-2 text-stone-300 hover:text-white">Corporate Governance</a>
+        </div>
+    </header>
+
+    <!-- Hero Header (Bright & Vivid Food Backdrop) -->
+    <section class="text-white py-20 sm:py-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center scale-100" style="background-image: url('assets/hero-mi-quang.jpg');"></div>
+        <div class="absolute inset-0 bg-black/55 backdrop-blur-[2px]"></div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 text-center bg-black/40 backdrop-blur-md p-8 sm:p-12 rounded-3xl border border-white/20 shadow-2xl">
+            <span class="text-xs font-bold tracking-[0.3em] uppercase text-turmeric-400 block mb-3">Culinary Repertoire</span>
+            <h1 class="font-serif text-4xl sm:text-6xl font-bold text-white mb-4 leading-tight">
+                Our Signature Creations
+            </h1>
+            <p class="text-stone-200 font-normal text-sm sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Every bowl of Mì Quảng Cô Viên is an artisanal symphony: golden turmeric ribbon noodles, 10-hour concentrated umami reduction, crisp mountain herbs, and premium local meats.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dishes Showcase -->
+    <main class="py-24 bg-brand-paper">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 space-y-24">
+
+            <!-- Category 1: The Iconic Benchmarks -->
+            <section>
+                <div class="mb-12 border-b-2 border-stone-200 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-[0.25em] text-turmeric-600 block">Classics & Flagships</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-1">The Traditional Benchmarks</h2>
+                    </div>
+                    <span class="text-xs text-stone-500 font-semibold">Slow-braised with native shallots & pure peanut oil</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Dish 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-200 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="aspect-[16/11] overflow-hidden relative">
+                                <img src="assets/mi-quang-ga-tom.jpg" alt="Mì Quảng Tôm Thịt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-brand-black/90 backdrop-blur-md text-turmeric-400 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-turmeric-500/50">
+                                    The Benchmark
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-turmeric-600 block mb-1">Central Heritage</span>
+                                <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Mì Quảng Tôm Thịt</h3>
+                                <p class="text-xs text-stone-500 font-semibold mb-4">Sweet River Prawns & Caramelized Pork Belly</p>
+                                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                                    Fresh river prawns and tender pork belly braised in shallot-infused turmeric sauce. Served over freshly steamed turmeric noodles, crowned with roasted peanuts and quail eggs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                            <span>Traditional Recipe</span>
+                            <span class="text-turmeric-700 font-bold">Signature Masterpiece</span>
+                        </div>
+                    </div>
+
+                    <!-- Dish 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border-2 border-turmeric-500 shadow-xl flex flex-col justify-between group relative">
+                        <span class="absolute -top-3 right-6 bg-turmeric-500 text-brand-black text-[9px] uppercase tracking-widest font-black px-3.5 py-1 rounded-full shadow-md z-10">
+                            Chef's Choice
+                        </span>
+                        <div>
+                            <div class="aspect-[16/11] overflow-hidden relative">
+                                <img src="assets/quang-noodles-recipe.jpg" alt="Mì Quảng Gà Ta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-brand-black/90 backdrop-blur-md text-turmeric-400 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-turmeric-500/50">
+                                    Countryside Heritage
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-turmeric-600 block mb-1">Free-Range Poultry</span>
+                                <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Mì Quảng Gà Ta</h3>
+                                <p class="text-xs text-stone-500 font-semibold mb-4">Firm Countryside Free-Range Chicken</p>
+                                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                                    Selected free-range chicken renowned for sweet, firm meat and golden skin. Braised gently with turmeric and native aromatics to preserve tenderness and rich savory broth.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                            <span>Central Free-Range</span>
+                            <span class="text-turmeric-700 font-bold">Most Beloved</span>
+                        </div>
+                    </div>
+
+                    <!-- Dish 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-200 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="aspect-[16/11] overflow-hidden relative">
+                                <img src="assets/hero-mi-quang.jpg" alt="Mì Quảng Đặc Biệt Cô Viên" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-brand-black/90 backdrop-blur-md text-turmeric-400 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-turmeric-500/50">
+                                    The Grand Feast
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-turmeric-600 block mb-1">House Signature</span>
+                                <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Mì Quảng Đặc Biệt Cô Viên</h3>
+                                <p class="text-xs text-stone-500 font-semibold mb-4">The Grand Combination of All Proteins</p>
+                                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                                    The ultimate realization of Cô Viên’s art: uniting braised prawns, caramelized pork, free-range chicken, and tender riblets with double accompaniments of toasted sesame crackers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                            <span>All-Star Combination</span>
+                            <span class="text-turmeric-700 font-bold">House Grand Bowl</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category 2: Regional Specialties -->
+            <section>
+                <div class="mb-12 border-b-2 border-stone-200 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-[0.25em] text-turmeric-600 block">Regional Delicacies</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-1">Specialty & Cut Variations</h2>
+                    </div>
+                    <span class="text-xs text-stone-500 font-semibold">Artisanal preparations for discerning palates</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Dish 4 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-200 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="aspect-[16/11] overflow-hidden relative">
+                                <img src="assets/mi-quang-hoi-an.jpg" alt="Mì Quảng Sườn Non" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-brand-black/90 backdrop-blur-md text-turmeric-400 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-turmeric-500/50">
+                                    Slow Braised
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-turmeric-600 block mb-1">Prime Cut</span>
+                                <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Mì Quảng Sườn Non</h3>
+                                <p class="text-xs text-stone-500 font-semibold mb-4">Succulent Young Pork Riblets</p>
+                                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                                    Young, tender riblets simmered until marrow juices dissolve into the reduction. The meat yields effortlessly, rich in natural gelatin and smoky turmeric notes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                            <span>Slow-cooked 6 hours</span>
+                            <span class="text-turmeric-700 font-bold">Marrow Richness</span>
+                        </div>
+                    </div>
+
+                    <!-- Dish 5 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-200 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="aspect-[16/11] overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="Mì Quảng Cá Lóc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-brand-black/90 backdrop-blur-md text-turmeric-400 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-turmeric-500/50">
+                                    Coastal Delicacy
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-turmeric-600 block mb-1">Freshwater Fish</span>
+                                <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Mì Quảng Cá Lóc</h3>
+                                <p class="text-xs text-stone-500 font-semibold mb-4">Turmeric Pan-Seared Snakehead Fish</p>
+                                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                                    Firm fillets of fresh snakehead fish filleted with care, marinated in fresh crushed turmeric and fish sauce, then pan-seared until fragrant with no fishiness.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                            <span>Traditional Countryside</span>
+                            <span class="text-turmeric-700 font-bold">Pure Flavor</span>
+                        </div>
+                    </div>
+
+                    <!-- Dish 6 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border-2 border-stone-200 shadow-sm hover:border-turmeric-500 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="aspect-[16/11] overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Mì Quảng Bò" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-brand-black/90 backdrop-blur-md text-turmeric-400 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-turmeric-500/50">
+                                    Tender Beef
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-turmeric-600 block mb-1">Select Beef Cuts</span>
+                                <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Mì Quảng Bò</h3>
+                                <p class="text-xs text-stone-500 font-semibold mb-4">Simmered Beef Flank & Native Aromatics</p>
+                                <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                                    Tender slices of premium beef slow-cooked in a robust reduction laced with star anise and shallot oils, yielding a deeply aromatic culinary depth.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                            <span>Savory Depth</span>
+                            <span class="text-turmeric-700 font-bold">Fragrant Essence</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category 3: The Indispensable Table Accompaniments -->
+            <section class="bg-white rounded-3xl p-8 sm:p-14 border-2 border-stone-200 shadow-sm">
+                <div class="max-w-3xl mb-10">
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-turmeric-600 block mb-1">Ritual of the Table</span>
+                    <h2 class="font-serif text-3xl font-bold text-stone-900">Indispensable Culinary Accompaniments</h2>
+                    <p class="text-stone-600 text-sm mt-2 font-light">
+                        True Mì Quảng is not enjoyed from a single bowl alone—it is assembled at the table with vital regional accompaniments that complete the sensory experience.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 rounded-2xl bg-brand-paper border border-stone-200">
+                        <div class="w-10 h-10 rounded-xl bg-turmeric-100 text-turmeric-700 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="disc" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-stone-900 mb-2">Bánh Tráng Đại Lộc</h4>
+                        <p class="text-stone-600 text-xs leading-relaxed">
+                            Thick, crunchy rice paper laden with black sesame seeds, toasted by hand over coconut charcoal. Shattered directly into the bowl for texture.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-paper border border-stone-200">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="leaf" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-stone-900 mb-2">Dĩa Rau Sống 9 Vị</h4>
+                        <p class="text-stone-600 text-xs leading-relaxed">
+                            Shaved banana blossoms, Vietnamese mint (rau răm), fish mint, and fresh Trà Quế herbs that cleanse the palate with cool botanical crispness.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-paper border border-stone-200">
+                        <div class="w-10 h-10 rounded-xl bg-turmeric-100 text-turmeric-700 flex items-center justify-center font-bold mb-4">
+                            <i data-lucide="flame" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-stone-900 mb-2">Ớt Xanh & Nước Mắm Nhĩ</h4>
+                        <p class="text-stone-600 text-xs leading-relaxed">
+                            Fresh green Central bird's-eye chilies bitten raw between mouthfuls, alongside pure artisanal fish sauce seasoned with crushed native garlic.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Call to Visit Establishments -->
+    <section class="py-20 bg-brand-black text-white border-t border-brand-charcoal text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <span class="text-xs font-bold tracking-[0.25em] uppercase text-turmeric-400 block mb-3">Experience It Fresh Daily</span>
+            <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-6">
+                Taste Authentic Cô Viên at Our Three Hubs
+            </h3>
+            <a href="locations.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-turmeric-500 text-brand-black text-xs font-bold uppercase tracking-[0.2em] hover:bg-turmeric-400 transition-all shadow-lg shadow-turmeric-500/20">
+                <span>View Locations & Directions</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Luxury Footer -->
+    <footer class="bg-brand-black text-stone-400 py-16 border-t border-brand-charcoal text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="w-11 h-11 rounded-full border-2 border-turmeric-500 overflow-hidden p-1 bg-white flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="font-serif text-lg font-bold text-white block">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-stone-500">CO VIEN MI QUANG FOOD TRADING CO., LTD. &middot; Tax ID: 0319275224</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-8 uppercase tracking-[0.15em] text-[11px]">
+                <a href="index.html" class="hover:text-turmeric-400">Home</a>
+                <a href="story.html" class="hover:text-turmeric-400">Heritage</a>
+                <a href="craft.html" class="hover:text-turmeric-400">Craft</a>
+                <a href="dishes.html" class="text-turmeric-400 font-bold">Dishes</a>
+                <a href="leadership.html" class="hover:text-turmeric-400">Leadership</a>
+                <a href="locations.html" class="hover:text-turmeric-400">Locations</a>
+                <a href="corporate.html" class="hover:text-turmeric-400">Corporate</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobileNavToggle').addEventListener('click', () => {
+            document.getElementById('mobileNavDropdown').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

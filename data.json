@@ -1,0 +1,89 @@
+{
+  "company": {
+    "legalNameEnglish": "CO VIEN MI QUANG FOOD TRADING COMPANY LIMITED",
+    "legalNameVietnamese": "CÔNG TY TNHH THƯƠNG MẠI THỰC PHẨM MÌ QUẢNG CÔ VIÊN",
+    "brandName": "Mì Quảng Cô Viên",
+    "taxId": "0319275224",
+    "domain": "miquangcovien.com",
+    "slogan": "Preserving the Sacred Soul of Mì Quảng & Central Vietnamese Culinary Heritage",
+    "inquiryEmail": "contact@miquangcovien.com",
+    "primaryHotline": "+84 906 404 595"
+  },
+  "leadership": [
+    {
+      "name": "PRAN NATH SONI",
+      "role": "Founder",
+      "title": "Founding Visionary",
+      "bio": "Instilled the founding vision, strategic enterprise ethos, and cross-cultural commitment to elevating Vietnam's regional culinary heritage to a premier international standard."
+    },
+    {
+      "name": "VO THI VIEN",
+      "role": "Director",
+      "title": "Director & Culinary Custodian (Cô Viên)",
+      "bio": "The culinary artisan and heartbeat of the brand. Safeguards generation-old Quang Nam family recipes, ingredient purism, handcrafted noodle texture, and traditional slow-braised umami reductions."
+    },
+    {
+      "name": "CHAYAN SONI",
+      "role": "Chief Executive Officer (CEO)",
+      "title": "Chief Executive Officer",
+      "bio": "Leads brand strategy, corporate governance, operational scaling across Thu Duc City hubs, and modern technological integration to establish Mì Quảng Cô Viên as an industry benchmark."
+    }
+  ],
+  "registeredLocations": [
+    {
+      "id": "hub-01",
+      "type": "Corporate Headquarters & Service Hub",
+      "name": "Long Bình Corporate Headquarters",
+      "address": "38 Đường 9A, Khu phố Phước Thiện, Phường Long Bình, TP. Thủ Đức, TP. Hồ Chí Minh, Vietnam",
+      "hours": "06:00 AM – 09:30 PM (Daily)",
+      "phone": "+84 906 404 595",
+      "isRegisteredSeat": true,
+      "googleMapsUrl": "https://maps.google.com/?q=38+Đường+9A+Long+Bình+Thủ+Đức"
+    },
+    {
+      "id": "hub-02",
+      "type": "Flagship Culinary Destination",
+      "name": "Nguyễn Xiển Culinary Hub",
+      "address": "532 – 542 Nguyễn Xiển, Phường Long Thạnh Mỹ / Long Bình, TP. Thủ Đức, TP. Hồ Chí Minh, Vietnam",
+      "hours": "06:00 AM – 10:00 PM (Daily)",
+      "phone": "+84 906 404 595",
+      "altPhone": "+84 909 622 967",
+      "isRegisteredSeat": false,
+      "googleMapsUrl": "https://maps.google.com/?q=532+Nguyễn+Xiển+Thủ+Đức"
+    },
+    {
+      "id": "hub-03",
+      "type": "Urban Gastronomy Hub",
+      "name": "Nguyễn Quý Đức Hub",
+      "address": "45 Nguyễn Quý Đức, Phường An Phú, TP. Thủ Đức, TP. Hồ Chí Minh, Vietnam",
+      "hours": "06:30 AM – 09:30 PM (Daily)",
+      "phone": "+84 906 404 595",
+      "isRegisteredSeat": false,
+      "googleMapsUrl": "https://maps.google.com/?q=45+Nguyễn+Quý+Đức+An+Phú+Thủ+Đức"
+    }
+  ],
+  "culinaryCraft": {
+    "pillars": [
+      {
+        "title": "Artisanal Fresh Rice Noodles",
+        "detail": "Kneaded and cut fresh daily from indigenous non-sticky paddy rice, naturally tinted with warm golden turmeric."
+      },
+      {
+        "title": "The Concentrated 'Nhưn' Broth",
+        "detail": "Simmered into a rich, savory essence rather than a full bowl of soup, coating every noodle strand in pure flavor."
+      },
+      {
+        "title": "The Nine-Herb Basket",
+        "detail": "Shaved young banana blossom, fish mint, Thai basil, and Vietnamese coriander sourced fresh every dawn."
+      },
+      {
+        "title": "Toasted Sesame Rice Crackers",
+        "detail": "Thick, aromatic sesame rice paper toasted over hot coals to provide the essential crisp texture."
+      },
+      {
+        "title": "Cold-Pressed Peanut Oil & Shallots",
+        "detail": "Pure unrefined peanut oil infused with crushed native shallots (củ nén) for the unmistakable Central scent."
+      }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Culinary Craft | Mì Quảng Cô Viên</title>
+    <meta name="description" content="An in-depth culinary masterclass into the ingredients, artisanal methods, and ritual of authentic Mì Quảng by Cô Viên.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        turmeric: {
+                            50: '#FFFBEB',
+                            100: '#FEF3C7',
+                            200: '#FDE68A',
+                            300: '#FCD34D',
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                            800: '#92400E',
+                            900: '#78350F'
+                        },
+                        brand: {
+                            black: '#0D0B0A',
+                            espresso: '#1A1614',
+                            charcoal: '#28231F',
+                            paper: '#FDFCF9',
+                            card: '#FFFFFF',
+                            border: '#EAE5DC',
+                            herbal: '#16A34A',
+                            herbaldark: '#14532D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-paper text-brand-black font-sans antialiased selection:bg-turmeric-500 selection:text-brand-black">
+
+    <!-- Top Luxury Utility Header -->
+    <!-- Navigation Bar -->
+        <!-- Main Navigation Bar (Clean, Sleek, No Overflow) -->
+    <header class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-charcoal text-white transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Insignia -->
+            <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+                <div class="w-11 h-11 rounded-full border border-turmeric-500 overflow-hidden p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-white leading-tight">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-[8px] uppercase tracking-[0.25em] text-turmeric-400 font-bold hidden sm:block">Central Vietnam Heritage</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links (Streamlined Labels to prevent border overflow) -->
+            <nav class="hidden xl:flex items-center gap-6 2xl:gap-8 text-xs font-semibold tracking-[0.12em] uppercase">
+                <a href="index.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Home</a>
+                <a href="story.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Heritage</a>
+                <a href="craft.html" class="text-turmeric-400 border-b-2 border-turmeric-500 pb-1 font-bold">The Craft</a>
+                <a href="dishes.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Dishes</a>
+                <a href="leadership.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Leadership</a>
+                <a href="locations.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Locations</a>
+                <a href="corporate.html" class="text-stone-300 hover:text-turmeric-400 transition-colors">Corporate</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
+                <a href="locations.html" class="px-5 py-2 rounded-full bg-turmeric-500 text-brand-black text-[11px] font-bold tracking-[0.15em] uppercase hover:bg-turmeric-400 transition-all duration-300 shadow-md">
+                    Find Hubs
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileNavToggle" aria-label="Toggle navigation" class="xl:hidden p-2 text-stone-300 hover:text-turmeric-400 flex-shrink-0">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobileNavDropdown" class="hidden xl:hidden bg-brand-black border-b border-brand-charcoal px-6 py-6 space-y-3 text-xs uppercase tracking-[0.18em]">
+            <a href="index.html" class="block py-2 text-stone-300 hover:text-white">Home</a>
+            <a href="story.html" class="block py-2 text-stone-300 hover:text-white">Heritage & Story</a>
+            <a href="craft.html" class="block py-2 text-turmeric-400 font-bold">The Culinary Craft</a>
+            <a href="dishes.html" class="block py-2 text-stone-300 hover:text-white">Signature Dishes</a>
+            <a href="leadership.html" class="block py-2 text-stone-300 hover:text-white">Executive Leadership</a>
+            <a href="locations.html" class="block py-2 text-stone-300 hover:text-white">Establishments & Hubs</a>
+            <a href="corporate.html" class="block py-2 text-stone-300 hover:text-white">Corporate Governance</a>
+        </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="bg-brand-black text-white py-24 sm:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-luminosity" style="background-image: url('https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-transparent"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
+            <span class="text-xs font-bold tracking-[0.3em] uppercase text-turmeric-400 block mb-4">Artisanal Mastery</span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                The Sacred Anatomy of Our Craft
+            </h1>
+            <p class="text-stone-300 font-light text-base sm:text-xl max-w-3xl mx-auto leading-relaxed">
+                Explore the five indispensable pillars that define genuine Central Vietnamese Mì Quảng at Cô Viên.
+            </p>
+        </div>
+    </section>
+
+    <!-- Masterclass Sections -->
+    <main class="py-24 bg-brand-paper">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 space-y-28">
+
+            <!-- Pillar 1: Noodles -->
+            <section id="noodles" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="lg:col-span-5 aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=1000&q=80" alt="Artisanal Noodle Making" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-turmeric-600 block">Pillar I</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+                        The Fresh Turmeric Rice Ribbon
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        Unlike industrially dried noodles, authentic Mì Quảng noodles must be made fresh each dawn. At Cô Viên, we use non-sticky local paddy rice steeped in fresh water, ground finely into a satin batter, and seasoned with cold-pressed peanut oil and ground yellow turmeric.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        The batter is poured onto taut muslin cloth stretched over boiling cauldrons, steamed for just under a minute into paper-thin translucent sheets, and sliced by hand into wide, golden ribbons with a springy, tender elasticity.
+                    </p>
+                    <div class="pt-4 border-t border-stone-200 text-xs font-bold uppercase tracking-wider text-turmeric-700">
+                        Zero preservatives &middot; 100% Native paddy rice &middot; Daily artisan preparation
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pillar 2: Broth -->
+            <section id="broth" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="lg:col-span-7 space-y-5 order-2 lg:order-1">
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-turmeric-600 block">Pillar II</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+                        The Concentrated "Nhưn" Reduction
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        The most common misconception of Mì Quảng is treating it like Phở or Bún Bò Huế. Mì Quảng is never served in a bowl flooded with soup.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        The broth—termed <em>nước nhưn</em>—is an intensely reduced savory essence. It is simmered for over 10 hours from bone reductions, caramelized native white shallots (<em>củ nén</em>), and the juices of braised meats. Only a shallow ladle (just enough to moisten the bottom third of the noodles) is added, ensuring the noodles absorb the concentrated umami without losing their toothsome bite.
+                    </p>
+                    <div class="pt-4 border-t border-stone-200 text-xs font-bold uppercase tracking-wider text-turmeric-700">
+                        10+ hour bone reduction &middot; Intense umami &middot; Authentic shallow serving
+                    </div>
+                </div>
+                <div class="lg:col-span-5 aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-stone-200 order-1 lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80" alt="Rich Braised Meat" class="w-full h-full object-cover">
+                </div>
+            </section>
+
+            <!-- Pillar 3: Herbs -->
+            <section id="herbs" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-emerald-600 transition-colors">
+                <div class="lg:col-span-5 aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80" alt="Fresh Nine Herbs" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-emerald-700 block">Pillar III</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+                        The Nine-Herb Botanical Garden
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        A bowl of Mì Quảng without its mountain of fresh greens is incomplete. The herb basket provides the crisp counterbalance to the rich, savory meat.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        Our basket combines nine distinct botanicals: shaved young banana blossoms (<em>bắp chuối</em>), peppery Vietnamese mint (<em>rau răm</em>), sweet Thai basil, pungent fish mint (<em>diếp cá</em>), coriander, saw-tooth herb, perilla, crisp water dropwort, and tender young mustard greens.
+                    </p>
+                    <div class="pt-4 border-t border-stone-200 text-xs font-bold uppercase tracking-wider text-emerald-800">
+                        Trà Quế botanical lineage &middot; Fresh mountain banana blossom &middot; Raw vitality
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pillar 4: Crackers -->
+            <section id="crackers" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl border-2 border-stone-200/90 shadow-sm hover:border-turmeric-500 transition-colors">
+                <div class="lg:col-span-7 space-y-5 order-2 lg:order-1">
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-turmeric-600 block">Pillar IV</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+                        Charcoal-Toasted Sesame Crackers
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        Mì Quảng engages all five human senses—especially hearing. The unmistakable crisp crackle of <em>Bánh tráng mè nướng</em> broken over the bowl introduces texture that bridges noodle softness with toasted nuttiness.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed text-sm sm:text-base font-light">
+                        Sourced from the traditional rice-paper craft villages of Đại Lộc, these thick sheets are packed with black sesame seeds and slowly turned by hand over open coconut-shell charcoal embers.
+                    </p>
+                    <div class="pt-4 border-t border-stone-200 text-xs font-bold uppercase tracking-wider text-turmeric-700">
+                        Artisanal Đại Lộc rice paper &middot; Black sesame &middot; Charcoal roasted
+                    </div>
+                </div>
+                <div class="lg:col-span-5 aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-stone-200 order-1 lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=80" alt="Crispy Traditional Accents" class="w-full h-full object-cover">
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="bg-brand-black text-stone-400 py-16 border-t border-brand-charcoal text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="w-11 h-11 rounded-full border-2 border-turmeric-500 overflow-hidden p-1 bg-white flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo.png" alt="Mì Quảng Cô Viên Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="font-serif text-lg font-bold text-white block">MÌ QUẢNG CÔ VIÊN</span>
+                    <span class="text-stone-500">CO VIEN MI QUANG FOOD TRADING CO., LTD. &middot; Tax ID: 0319275224</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-8 uppercase tracking-[0.15em] text-[11px]">
+                <a href="index.html" class="hover:text-turmeric-400">Home</a>
+                <a href="story.html" class="hover:text-turmeric-400">Heritage</a>
+                <a href="craft.html" class="text-turmeric-400 font-bold">Craft</a>
+                <a href="dishes.html" class="hover:text-turmeric-400">Dishes</a>
+                <a href="leadership.html" class="hover:text-turmeric-400">Leadership</a>
+                <a href="locations.html" class="hover:text-turmeric-400">Locations</a>
+                <a href="corporate.html" class="hover:text-turmeric-400">Corporate</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobileNavToggle').addEventListener('click', () => {
+            document.getElementById('mobileNavDropdown').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
