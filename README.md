@@ -9,7 +9,7 @@
 * **Legal Enterprise Name (VN):** CÔNG TY TNHH THƯƠNG MẠI THỰC PHẨM MÌ QUẢNG CÔ VIÊN
 * **Tax Code / Enterprise ID:** `0319275224`
 * **Official Domain:** `miquangcovien.com`
-* **Inquiry Email:** `contact@miquangcovien.com`
+* **Inquiry Email:** `miquang.cv@gmail.com`
 * **Hotline:** `+84 906 404 595`
 
 ### Executive Leadership & Ownership
