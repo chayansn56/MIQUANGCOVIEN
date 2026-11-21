@@ -32,7 +32,7 @@ export default function App() {
               onExploreLocations={() => navigateTo('locations')}
             />
             {/* Curated Dishes Portfolio on Home */}
-            <Dishes />
+            <Dishes onExploreLocations={() => navigateTo('locations')} />
             {/* Establishments Teaser on Home */}
             <Locations />
           </>
@@ -40,7 +40,7 @@ export default function App() {
 
         {currentTab === 'heritage' && <Heritage />}
         {currentTab === 'craft' && <Craft />}
-        {currentTab === 'dishes' && <Dishes />}
+        {currentTab === 'dishes' && <Dishes onExploreLocations={() => navigateTo('locations')} />}
         {currentTab === 'leadership' && <Leadership />}
         {currentTab === 'locations' && <Locations />}
         {currentTab === 'corporate' && <Corporate />}
